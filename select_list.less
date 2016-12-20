@@ -1,0 +1,41 @@
+
+.select-list {
+  .form-control {
+    height: auto;
+    padding-left: 5px;
+    cursor: text;
+  }
+  .selected-options {
+    padding-left: 0;
+    margin-bottom: 0;
+    > li {
+      float: left;
+      border: 1px solid #666;
+      list-style-type: none;
+      margin-right: 5px;
+    }
+  }
+  .options-list {
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-top: 0 none transparent;
+    margin-top: -2px;
+    padding-left: 0;
+    > .item-li {
+      list-style-type: none;
+      padding-left: 5px;
+      &.selected {
+        background-color: #5897fb;
+        color: #fff;
+      }
+    }
+  }
+  .search-input {
+    display: list-item;
+    float: left;
+    outline: none;
+    padding-left: 0;
+    border: 0 none transparent;
+  }
+}
